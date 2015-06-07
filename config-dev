@@ -1,0 +1,18 @@
+npm install --save-dev gulp
+npm install --save-dev gulp-connect
+npm install --save-dev connect-history-api-fallback
+npm install --save-dev gulp-jshint
+npm install --save-dev gulp-useref
+npm install --save-dev gulp-if
+npm install --save-dev gulp-uglify
+npm install --save-dev gulp-minify-css
+npm install --save-dev gulp-less
+npm install --save-dev nib
+npm install --save-dev gulp-inyect
+npm install --save-dev wiredep
+
+/** bower*/
+bower install --save angular
+bower install --save angular-route
+bower install --save angular-resource
+bower install --save bootstrap
