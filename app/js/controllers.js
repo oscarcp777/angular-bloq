@@ -17,17 +17,17 @@
       Post.save(self.post);
     };
   }
-  function PostDetailCtrl($routeParams, Post, Comment) {
+  function PostDetailCtrl($routeParams, Post, Comment,User) {
     this.post = {};
     this.comments = {};
-    this.user = {}
+    this.user = {};
     var self = this; // Para guardar la referencia
     Post.query({ id: $routeParams.postId })
       .$promise.then(
       //Success
       function(data) {
         self.post = data[0];
-        self.user = User.query({ id: self.user.userId });
+        self.user = User.query({ id: data[0].id });
       },
     //Error
     function(error) {
@@ -42,3 +42,4 @@
 
 
 })();
+
